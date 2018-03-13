@@ -69,6 +69,7 @@ h2 {
 }
 
 .gallery > h1 {
+    font-family: "Apple Chancery", cursive;
     font-size: 26px;
     text-align: left;
     margin-left: 10px;
@@ -128,6 +129,10 @@ h2 {
 navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
+    .navigation {
+        font-family: "Times New Roman", Times, serif
+    }
+
     .navigation a b {
         padding: 5px 16px;
         text-align: left;
@@ -163,12 +168,18 @@ navigation links stack on top of each other instead of next to each other */
   }
 
   .gallery div {
-    height: 160px;
+    height: 140px;
   }
 
   .gallery div img 
   {
-    height: 140px;
+    height: 120px;
+  }
+
+  .code p {
+    font-size: 16px;
+    width: 92%;
+    padding-left: 4%;
   }
 }
 
