@@ -147,10 +147,11 @@ navigation links stack on top of each other instead of next to each other */
     height: 700px;
     margin: 0px 2% 2% 2%;
   }
-}
 
-@media screen and (max-width: 800px) {
-  .navigation.responsive {position: relative;}
+  .navigation.responsive {
+    position: relative;
+  }
+  
   .navigation.responsive .icon {
     color: white;
     position: absolute;
