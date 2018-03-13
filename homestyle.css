@@ -24,7 +24,7 @@ body {
     font-family: "Apple Chancery", cursive;
     font-size: 20px;
     overflow: hidden;
-    background-color: none;
+    background-color: black;
     /*position: fixed;*/
 }
 
@@ -89,13 +89,13 @@ body {
     text-align: center;
 }
 
-.navigation .icon {
+.navigation a.icon {
   display: none;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the
+/* Responsive layout - when the screen is less than 800px wide, make the
 navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navigation a b {
         padding: 5px 16px;
         text-align: left;
@@ -108,10 +108,16 @@ navigation links stack on top of each other instead of next to each other */
         float: right;
         display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
-  .navigation.responsive {position: relative;}
+    .leftcolumn {
+        font-size: 19px;
+    }
+
+    .rightcolumn {
+        font-size: 22px;
+    }
+
+    .navigation.responsive {position: relative;}
   .navigation.responsive .icon {
     color: white;
     position: absolute;
@@ -128,3 +134,7 @@ navigation links stack on top of each other instead of next to each other */
     display: none;
   }
 }
+
+/*@media (max-width: 800px) {*/
+  
+/*}*/
