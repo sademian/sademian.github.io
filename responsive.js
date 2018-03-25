@@ -1,4 +1,5 @@
 // Sandy Demian
+// responsive.js
 
 function myFunction() 
 {
@@ -11,13 +12,13 @@ function myFunction()
   {
     x.className = "navigation";
   }
-  var y = document.getElementById("code");
-  if (y.className === "leftcolumn")
+  var y = document.getElementById("comment");
+  if (y.className === "code")
   {
     y.className += " responsive";
   } 
   else 
   {
-    y.className = "leftcolumn";
+    y.className = "code";
   }
 }
