@@ -120,7 +120,12 @@ navigation links stack on top of each other instead of next to each other */
     }
 
     .rightcolumn {
-        display: none;
+        width: 96%;
+        padding: 36% 2% 5% 2%;
+    }
+
+    .rightcolumn p {
+        font-size: 30px;
     }
 
     .navigation.responsive {
