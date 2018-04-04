@@ -105,7 +105,6 @@ h2 {
 
 .sec a {
   color: white;
-  text-decoration: none;
 }
 
 .sec a:hover {
@@ -190,6 +189,18 @@ h2 {
 .rr a {
   color: #b8abc6;
 }
+
+/*.l {
+  width:45%;
+  float: left;
+  padding: 1% 0% 1% 2%;
+}
+
+.r {
+  width: 45%;
+  float: left;
+  padding: 0% 0% 2% 10%;
+}*/
 
 /*----------------- About Me -----------------*/
 
