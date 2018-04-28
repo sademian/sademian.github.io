@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Programming - Mondrian</title>
+  <link rel="stylesheet" type="text/css" href="generalstyle.css">
+</head>
+<body>
+
+  <div class="navigation" id="nav" style="background-color: none;">
+      <a href="index.html"><img src="logo.png" alt="home" height="56px"></a>
+      <a href="aboutme.html"><b>About Me</b></a>
+      <a href="projects.html"><b>Programming</b></a>
+      <a href="artwork.html"><b>Art</b></a>
+      <a href="resume.html"><b>Resume</b></a>
+      <a href="javascript:void(0);" style="font-size:30px;color: white; padding: 18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Mondrian Art Generator <button onClick="draw()" id="b">Mondrianize</button></h1>
+        <p>Gnerates Mondrian style art using a divide and conquer approach. This was a fun weekend project done using JavaScript, the code can be found <a href="https://github.com/sademian/mondrian-art-generator">here</a>. Click on the button above to generate different Mondrian art!</p>
+        <canvas id="art" width="700" height="600" style="border:8px solid black; margin-top: 20px;"></canvas>
+      </div>
+
+    </div>
+
+  <script>
+    var width = 700;
+    var height = 600;
+    var minimum = 200;
+    var mode = 0;
+    var colors = ["white", "yellow", "red", "white", "white", "white", "blue", "white"];
+    var c = 0;
+
+      var canvas = document.getElementById('art');
+      var ctx = canvas.getContext('2d');
+
+      mond(0,width,0,height);
+
+      // called when the button is clicked
+      function draw(){
+        ctx.clearRect(0,0,width,height);
+        mond(0,width,0,height);
+      }
+      
+      // recursive mondrian function
+      function mond(x1, x2, y1, y2)
+      {
+        var w = x2-x1;
+        var h = y2-y1;
+        var p;
+
+        // randomly choose the mode, did not like it
+        //mode = Math.floor(Math.random()*2);
+
+        // stop dividing when the width and height are too small
+        if (w<minimum && h<minimum)
+        {
+          return 1;
+        }
+
+        // change the mode if the height is too small and the section was supposed to be divided horizontally
+        // or the oppisite case, if the width is too small and the section was supposed to be divided vertically
+        if((mode%2 == 0 && h<minimum) || (mode%2 == 1 && w<minimum))
+        {
+          mode++;
+        }
+
+        // horizontal division if the mode is even
+        if (mode%2 == 0)
+        {
+          // generate the division point
+          p = Math.floor(Math.random()*((3*h)/5) + (1*h/5));
+
+          // color the top section
+          //c = Math.floor(Math.random()*8); // I tried to randomly choose the color but didn't like it
+          ctx.fillStyle= colors[c%8];
+          ctx.fillRect(x1,y1,w,p-4);
+          c++;
+
+          // draw the division line
+          ctx.fillStyle= "black";
+          ctx.fillRect(x1,y1+p-4,w,8);
+
+          // color the bottom section
+          //c = Math.floor(Math.random()*8);
+          ctx.fillStyle= colors[c%8];
+          ctx.fillRect(x1,y1+p+4,w,h-(p+4));
+          c++;
+
+          // store the data that would be overwitten in the recursion process
+          var xa=x1, xb=x2, ya=y1+p+4, yb=y2;
+
+          // call mond() on the top section
+          mode++;
+          mond(x1,x2,y1,y1+p-4);
+
+          // call mond() on the bottom section
+          mode++;
+          mond(xa,xb,ya,yb);
+
+          return;
+        }
+        // vertiical division if the mode is odd
+        else if (mode%2 == 1)
+        {
+          // generate the division point
+          p = Math.floor(Math.random()*((3*w)/5) + (1*w/5));
+
+          // color the left section
+          //c = Math.floor(Math.random()*8);
+          ctx.fillStyle= colors[c%8];
+          ctx.fillRect(x1,y1,p-4,h);
+          c++;
+
+          // draw the division line
+          ctx.fillStyle= "black";
+          ctx.fillRect(x1+p-4,y1,8,h);
+
+          // color the right section
+          //c = Math.floor(Math.random()*8);
+          ctx.fillStyle= colors[c%8];
+          ctx.fillRect(x1+p+4,y1,w-(p+4),h);
+          c++;
+
+          // store the data that would be overwitten in the recursion process
+          var xa=x1+p+4, xb=x2, ya=y1, yb=y2;
+
+          // call mond() on the left section
+          mode++;
+          mond(x1,x1+p-4,y1,y2);
+
+          // call mond() on the right section
+          mode++;
+          mond(xa,xb,ya,yb);
+
+          return;
+        }
+      }
+
+
+    function myFunction() 
+    {
+      var x = document.getElementById("nav");
+      if (x.className === "navigation") 
+      {
+        x.className += " responsive";
+      } 
+      else 
+      {
+        x.className = "navigation";
+      }
+    }
+  </script>
+
+</body>
+</html>
