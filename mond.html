@@ -21,27 +21,30 @@
       <div class="sec">
         <h1>Mondrian Art Generator <button onClick="draw()" id="b">Mondrianize</button></h1>
         <p>Gnerates Mondrian style art using a divide and conquer approach. This was a fun weekend project done using JavaScript, the code can be found <a href="https://github.com/sademian/mondrian-art-generator">here</a>. Click on the button above to generate different Mondrian art!</p>
-        <canvas id="art" width="700" height="600" style="border:8px solid black; margin-top: 20px;"></canvas>
+        <canvas id="art" style="margin-top: 20px;"></canvas>
       </div>
 
     </div>
 
   <script>
-    var width = 700;
-    var height = 600;
-    var minimum = 200;
+    var width = (document.documentElement.clientWidth*2)/3;
+    var height = (width*2)/3;
+    var minimum = width/5;
     var mode = 0;
     var colors = ["white", "yellow", "red", "white", "white", "white", "blue", "white"];
     var c = 0;
+    var l = width/200;
 
       var canvas = document.getElementById('art');
+      canvas.width = width;
+      canvas.height = height;
+      canvas.style.border = (2*l) + 'px solid #000';
       var ctx = canvas.getContext('2d');
 
       mond(0,width,0,height);
 
       // called when the button is clicked
       function draw(){
-        ctx.clearRect(0,0,width,height);
         mond(0,width,0,height);
       }
       
@@ -77,25 +80,25 @@
           // color the top section
           //c = Math.floor(Math.random()*8); // I tried to randomly choose the color but didn't like it
           ctx.fillStyle= colors[c%8];
-          ctx.fillRect(x1,y1,w,p-4);
+          ctx.fillRect(x1,y1,w,p-l);
           c++;
 
           // draw the division line
           ctx.fillStyle= "black";
-          ctx.fillRect(x1,y1+p-4,w,8);
+          ctx.fillRect(x1,y1+p-l,w,8);
 
           // color the bottom section
           //c = Math.floor(Math.random()*8);
           ctx.fillStyle= colors[c%8];
-          ctx.fillRect(x1,y1+p+4,w,h-(p+4));
+          ctx.fillRect(x1,y1+p+l,w,h-(p+l));
           c++;
 
           // store the data that would be overwitten in the recursion process
-          var xa=x1, xb=x2, ya=y1+p+4, yb=y2;
+          var xa=x1, xb=x2, ya=y1+p+l, yb=y2;
 
           // call mond() on the top section
           mode++;
-          mond(x1,x2,y1,y1+p-4);
+          mond(x1,x2,y1,y1+p-l);
 
           // call mond() on the bottom section
           mode++;
@@ -112,25 +115,25 @@
           // color the left section
           //c = Math.floor(Math.random()*8);
           ctx.fillStyle= colors[c%8];
-          ctx.fillRect(x1,y1,p-4,h);
+          ctx.fillRect(x1,y1,p-l,h);
           c++;
 
           // draw the division line
           ctx.fillStyle= "black";
-          ctx.fillRect(x1+p-4,y1,8,h);
+          ctx.fillRect(x1+p-l,y1,8,h);
 
           // color the right section
           //c = Math.floor(Math.random()*8);
           ctx.fillStyle= colors[c%8];
-          ctx.fillRect(x1+p+4,y1,w-(p+4),h);
+          ctx.fillRect(x1+p+l,y1,w-(p+l),h);
           c++;
 
           // store the data that would be overwitten in the recursion process
-          var xa=x1+p+4, xb=x2, ya=y1, yb=y2;
+          var xa=x1+p+l, xb=x2, ya=y1, yb=y2;
 
           // call mond() on the left section
           mode++;
-          mond(x1,x1+p-4,y1,y2);
+          mond(x1,x1+p-l,y1,y2);
 
           // call mond() on the right section
           mode++;
