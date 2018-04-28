@@ -275,6 +275,7 @@ h2 {
 
   .navigation {
     font-family: "Times New Roman", Times, serif;
+    background-color: black;
   }
 
   .navigation a b {
@@ -317,8 +318,10 @@ h2 {
   }
 
   .quote {
+    display: none;
     width: 96%;
-    padding: 44% 2% 5% 2%;
+    margin: 44% 2% 5% 2%;
+    position: fixed;
   }
 
   .quote p {
@@ -380,7 +383,7 @@ h2 {
   }
 
   #s {
-    width: 400px;
+    width: 360px;
   }
 }
 
