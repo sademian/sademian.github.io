@@ -385,5 +385,10 @@ h2 {
   #s {
     width: 360px;
   }
+
+  iframe {
+    width: 460px;
+    height: 260px;
+  }
 }
 
