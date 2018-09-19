@@ -1,0 +1,81 @@
+/* 
+  Sandy Demian
+  General Page Style
+*/
+
+/*----------------- General -----------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: url(waldo/waldo_background.png);
+    background-repeat: repeat; 
+    background-size: 50%;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  color: #990000;
+  margin-bottom: 3px;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: #990000;
+  padding: 0%;
+  margin-bottom: 3px;
+  display: inline;
+}
+
+img {
+  display: inline-block;
+  height: 200px;
+  margin: 4px 2px 0px 2px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 2px;
+  line-height: 1.6;
+  display: inline;
+}
+
+
+/*----------------- Body and Sections -----------------*/
+
+.body {
+    float: center;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
+    padding-bottom: 100px;
+    background-color: #cccccc; /*#333333;*/
+}
+
+.sec {
+    float: center;
+    width: 94%;
+    height: 80%;
+    padding: 2% 4% 1% 5%;
+}
+
+.left {
+  float: left;
+  width: 46%;
+}
+
+.right {
+  float: left;
+  width: 46%;
+  height: 250px;
+  padding: 1% 4% 1% 4%;
+}
