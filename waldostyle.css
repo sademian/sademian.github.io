@@ -73,9 +73,44 @@ p {
   width: 46%;
 }
 
+.left img {
+  height: 240px;
+  float: center;
+}
+
 .right {
   float: left;
   width: 46%;
   height: 250px;
   padding: 1% 4% 1% 4%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide */
+@media screen and (max-width: 800px) {
+
+  img {
+    height: 120px;
+    margin: 2px 1px 0px 1px;
+  }
+
+  .body {
+    width: 90%;
+    height: 100%;
+    margin: 0% 5% 0% 5%;
+    padding-bottom: 60px;
+  }
+
+  .left {
+    width: 96%;
+  }
+
+  .left img {
+    height: 170px;
+  }
+
+  .right {
+    width: 96%
+  }
+
+
 }
