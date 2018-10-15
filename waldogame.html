@@ -50,7 +50,14 @@
 
       <div class="sec">
         <h2>Week of October 8, 2018<br/></h2>
-        <p>- We are working on our powerpoint for the first-playable presentation<br/>- We modified the game to be a True First Person Point of view<br/>- We started working on the Heads Up Display</p>
+        <p>- We are working on our powerpoint for the first-playable presentation<br/>- We modified the game to be a True First Person Point of view<br/>- We started working on the HUD<br/>- Gave player ability to sprint away from danger by holding down the Left_Shift key.  The following blueprint illustrates the Sprint action being called on once user presses the shift key. When pressed Player will accelerates a max speed of 1600 when released it will go back down to a more normal walk of 800. This will be will be helpful in running away from Waldo<br/></p>
+        <img src="waldo/code0.png" style="height: 300px;" />
+        <p><br/>- Updated HUD to display objects as they are collected. Set all the Items with a particular variable number under one particular slot. once player goes over an item the number will push to the slot the ID number of the item overwritten anything that might of been there before. Blueprint illustrates the set up of ID numbers per item. As seen if the slot varible is >= 0 it will override and "set" a int value (ex set slot1item = 3). Furthermore, creating the HUD widget interaction once player collects item is stored in the "ThirdPersonCharacter". By using the int variable "Slot1Item"in a "switch on variable" call we are able to change the opacity of each individual item widget once there ID number is collected from the ThirdPersonCharacter.<br/></p>
+        <img src="waldo/code1.png" style="height: 270px;" />
+        <img src="waldo/code2.png" style="height: 370px;" />
+        <p><br/>- Item Randomization: We were able to finally compile a working random assortment of the items through the environment. In the following blueprint you can see There is a "volume" object which represents a box to create the range of the environment in which random spawning may occur. We take the x and y variable of the "volume" component to make sure it is placed some where near the ground and set the z variable at default 0. Once a random x and y have been selected they are made into a vector which is given out to the spawning items individual at the beginning of the game.<br/></p>
+        <img src="waldo/code3.png" style="height: 420px;" />
+        <img src="waldo/hud.png" style="height: 220px;" />
       </div>
 
       <div class="sec">
