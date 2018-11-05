@@ -189,6 +189,12 @@ h2 {
   padding: 1% 0% 1% 2%;
 }
 
+.rl2 {
+  width:32%;
+  float: left;
+  padding: 1% 0% 1% 2%;
+}
+
 .rr {
   width: 66%;
   float: left;
@@ -345,6 +351,12 @@ h2 {
     width:88%;
     float: left;
     background-color: black;
+    padding: 1% 1% 1% 4%;
+  }
+
+  .rl2 {
+    width:88%;
+    float: left;
     padding: 1% 1% 1% 4%;
   }
 
