@@ -41,12 +41,23 @@
 
       <div class="sec">
         <h2>Work Break down:<br/></h2>
-        <p>- Nick: environment, Waldo character model<br/></p>
-        <p>- Neysha: audio, item collection, random placement of items, Waldo's AI<br/></p>
+        <p>- Nick: environment, audio, Waldo character model<br/></p>
+        <p>- Neysha: audio assets, item collection, random placement of items, Waldo's AI<br/></p>
         <p>- Sandy: UI, crowd assets and animation, crowd AI, website, some 3D assets<br/></p>
       </div>
       
       <div class="sec2"></div>
+
+      <div class="sec">
+        <h2>Week of October 29, 2018<br/></h2>
+        <p>- Fixed the problems in Waldo's animation<br/>- Added music to the main menu<br/>- Incorporated a block boundary to maintain the player within the environment of the game<br/>- Added a slight fog and inputted the Exit sign to the game. Once the player collects all 5 items they will be able to leave the circus<br/></p>
+        <iframe width="455" height="300" src="https://www.youtube.com/embed/o0i7-AvaPeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="455" height="300" src="https://www.youtube.com/embed/FZWJRIezg9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><br/>- The following Door_BP goes over the interaction between the player and the door. The Door will cast to the third player and check if the slot items have reached the 5 total items for collection. Once this is done it will set the slot number to 5 which will then go into the time line. in the time line there is clean parabola that will perform movement of the door in a smooth transition in a period of 1 second<br/></p>
+        <img src="waldo/doorBP.png" style="height: 360px;"/>
+        <p><br/>- The following is the smooth parabola demonstration as the object is activated to perform its motion<br/></p>
+        <img src="waldo/graph.png" style="height: 300px;"/>
+      </div>
 
       <div class="sec">
         <h2>Week of October 29, 2018<br/></h2>
