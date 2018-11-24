@@ -49,11 +49,23 @@
       <div class="sec2"></div>
 
       <div class="sec">
+        <h2>Week of November 19, 2018<br/></h2>
+        <p>- Fixed Waldo's pawn sensing by using "inRange".<br/></p>
+        <img src="waldo/waldofixed1.png" style="height: 300px;"/>
+        <img src="waldo/waldofixed2.png" style="height: 340px;"/>
+        <p><br/>- Added pawn listening so that Waldo can hear the player when he gets within a certain range even if the player is not in his vision cone.<br/></p>
+        <img src="waldo/waldolisten.png" style="height: 340px;"/>
+        <p><br/>- Added discovery audio; when Waldo senses the player and is about to chase them, the audio "peekabo, I see you" plays.</p>
+        <img src="waldo/peekabo.png" style="height: 300px;"/>
+      </div>
+
+      <div class="sec">
         <h2>Week of November 12, 2018<br/></h2>
         <p>- We improved the crowd wandering AI. Before, the characters would pick a random location within a certain radius; their behavior felt unrealistic because sometimes they would make sharp turns. Now, the characters choose a random point on the radius of a circle in front of them; this limits the angle change. When the character is in a location where they can't move forward because they are blocked by an object or person, they then choose a random point on a circle behind them instead.<br/></p>
         <iframe width="455" height="300" src="https://www.youtube.com/embed/GxQYvHv675s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><br/>- Here is th logic for choosing the origin and radius of the circle<br/></p>
+        <p><br/>- Here is th logic for choosing the origin and radius of the circle and getting a random point on a circle.<br/></p>
         <img src="waldo/wandering.png" style="height: 340px;"/>
+        <img src="waldo/wandering2.png" style="height: 340px;"/>
         
       </div>
 
