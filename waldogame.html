@@ -49,6 +49,19 @@
       <div class="sec2"></div>
 
       <div class="sec">
+        <h2>Week of November 26, 2018<br/></h2>
+        <p>- In the following item spawning BP the "Volume" would refer to the area that is designated to spawn items. It will take a random X and Y and place the items at that desired location. This action will be designated on "SpawnNewItem" Event. This event will check that the X and Y coordinate do not hide inside assets in the environment. Each asset has a "NoSpawnItem" Box which sets the boundaries of each individual asset. If the X and Y coordinate match with the any point within the "NOSpawnBox" it will run the "SpawnNewItem" event again till it finds a location in the playing field.<br/></p>
+        <img src="waldo/bp1.png" style="height: 420px;"/>
+        <img src="waldo/bp2.png" style="height: 440px;"/>
+        <p><br/>- Items hiding with in objects resolution: In the following BP the a call on all five item event are done within 0.2 seconds.<br/></p>
+        <img src="waldo/bp3.png" style="height: 300px;"/>
+        <p><br/>- as previously the boundaries of the spawning box are picked at random X & Y coordinates and put into a vector.<br/></p>
+        <img src="waldo/bp4.png" style="height: 300px;"/>
+        <p><br/>- This vector will then be send to each individual items event handler which will then look if the coordinates that were produced are equal to any coordinates within the "NoSpawnBox" (Which are set on each of the assets within the game). If the coordinates match to any coordinate within the "NoSpawnBox" it will call on the event handler again to ask for another coordinate. if the coordinate does not match then the item will be placed in given location that was produced. This procedure is done throughout all 5 items.<br/></p>
+        <img src="waldo/bp5.png" style="height: 420px;"/>
+      </div>
+
+      <div class="sec">
         <h2>Week of November 19, 2018<br/></h2>
         <p>- Fixed Waldo's pawn sensing by using "inRange".<br/></p>
         <img src="waldo/waldofixed1.png" style="height: 300px;"/>
