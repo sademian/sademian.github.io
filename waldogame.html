@@ -49,13 +49,25 @@
       <div class="sec2"></div>
 
       <div class="sec">
+        <h2>Week of December 3, 2018<br/></h2>
+        <p>- We have completed development of the win state. As demonstrated in the video above the player is only able to pass through the gate if all 5 items are collected. Otherwise, an audio clip will be played to signify that the player has not yet collected all the items<br/></p>
+        <iframe width="455" height="300" src="https://www.youtube.com/embed/n9PYcJb1MFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><br/>- This action was created by having a BP interface Check for each individual inventory<br/></p>
+        <img src="waldo/bp6.png" style="height: 350px;"/>
+        <p><br/>- Only the player would have the ability to collect and keep track of how many items are within the event inventory<br/></p>
+        <img src="waldo/bp7.png" style="height: 350px;"/>
+        <p><br/>- Each individual items will call on its event manager and check if the item has been collected or not if it has not been collected a "rejection" audio sound will play to signify to the player that they have not yet collected all the items. If they do have all the items then the door animation will play and the win state will display<br/></p>
+        <img src="waldo/bp8.png" style="height: 400px;"/>
+      </div>
+
+      <div class="sec">
         <h2>Week of November 26, 2018<br/></h2>
         <p>- In the following item spawning BP the "Volume" would refer to the area that is designated to spawn items. It will take a random X and Y and place the items at that desired location. This action will be designated on "SpawnNewItem" Event. This event will check that the X and Y coordinate do not hide inside assets in the environment. Each asset has a "NoSpawnItem" Box which sets the boundaries of each individual asset. If the X and Y coordinate match with the any point within the "NOSpawnBox" it will run the "SpawnNewItem" event again till it finds a location in the playing field.<br/></p>
         <img src="waldo/bp1.png" style="height: 420px;"/>
         <img src="waldo/bp2.png" style="height: 440px;"/>
         <p><br/>- Items hiding with in objects resolution: In the following BP the a call on all five item event are done within 0.2 seconds.<br/></p>
         <img src="waldo/bp3.png" style="height: 300px;"/>
-        <p><br/>- as previously the boundaries of the spawning box are picked at random X & Y coordinates and put into a vector.<br/></p>
+        <p><br/>- as previously the boundaries of the spawning box are picked at random X and Y coordinates and put into a vector.<br/></p>
         <img src="waldo/bp4.png" style="height: 300px;"/>
         <p><br/>- This vector will then be send to each individual items event handler which will then look if the coordinates that were produced are equal to any coordinates within the "NoSpawnBox" (Which are set on each of the assets within the game). If the coordinates match to any coordinate within the "NoSpawnBox" it will call on the event handler again to ask for another coordinate. if the coordinate does not match then the item will be placed in given location that was produced. This procedure is done throughout all 5 items.<br/></p>
         <img src="waldo/bp5.png" style="height: 420px;"/>
