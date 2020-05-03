@@ -13,35 +13,48 @@
 
 body {
     color: white;
+    background-image: url('bg.png');
+    background-size: 40%;
     background-color: #330033; /*#2d1935*/
     height: 100%;
+    width: 100%;
 }
 
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 28px;
-  color: white;
-  margin-bottom: 3px;
+  color: #b8abc6;
+  margin-bottom: px;
 }
 
 h2 {
   font-weight: normal;
   font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
-  color: white;
+  font-size: 22px;
+  color: #b8abc6;
   padding: 0%;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
+}
+
+footer { 
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  color: white;
 }
 
 /*----------------- Navigation -----------------*/
 
 .navigation {
     list-style-type: none;
-    margin: 6px;
+    margin: 4px 12px 2px 12px;
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     overflow: hidden;
-    background-color: black;
+    /*background-color: black;*/
     /*position: fixed;*/
 }
 
@@ -49,7 +62,7 @@ h2 {
     float: left;
     display: block;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
 }
 
 .navigation b {
@@ -73,21 +86,32 @@ h2 {
 
 .body {
     float: left;
-    width: 100%;
+    width: 70%;
     height: 100%;
-    margin: 2% 6% 4% 6%;
-    background-color: none;
+    margin: 0% 15% 0% 15%;
+    padding: 0px 0px 60px 0px;
+    background-color: #330033;
+}
+
+.header {
+    float: left;
+    height: 70px;
+    width: 100%;
+    margin: 0%;
+    background-color: black;
 }
 
 .sec {
     float: left;
-    width: 88%;
-    margin: 2% 0% 1% 0%;
+    width: 94%;
+    background-color: none; /*grey;*/
+    margin: 4% 4% 2% 4%;
+    padding-bottom: 0px;
 }
 
 .sec p {
-  font-size: 20px;
-  color: #b8abc6;
+  font-size: 19px;
+  color: #e6e2eb;
   margin-bottom: 2px;
   line-height: 1.6;
 }
@@ -183,10 +207,10 @@ h2 {
 /*----------------- Resume -----------------*/
 
 .rl {
-  width:32%;
+  width:36%;
   float: left;
-  background-color: black;
-  padding: 1% 0% 1% 2%;
+  margin: 0% 0% 0% 4%;
+  padding: 1% 2% 1% 1%;
 }
 
 .rl2 {
@@ -196,9 +220,10 @@ h2 {
 }
 
 .rr {
-  width: 66%;
+  width: 54%;
   float: left;
-  padding: 0% 4% 2% 4%;
+  margin: 0% 4% 0% 0%;
+  padding: 1% 1% 1% 2%;
 }
 
 .rr a {
@@ -237,13 +262,13 @@ h2 {
 .pl {
   width:28%;
   float: left;
-  background-color: black;
+  background-color: none;
   margin: 1% 1% 1% 2%;
 }
 
 .pl img {
   width: 84%;
-  margin: 8% 8% 4% 8%;
+  margin: 8% 8% 8% 8%;
 }
 
 /*----------------- Wizard Hunt -----------------*/

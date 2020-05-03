@@ -7,112 +7,95 @@
 </head>
 <body>
 
+  <div class="header" id="head">
     <div class="navigation" id="nav">
-      <a href="index.html"><img src="logo.png" alt="home" height="56px"></a>
-      <a href="aboutme.html"><b>About Me</b></a>
-      <a href="projects.html"><b>Programming</b></a>
-      <a href="artwork.html"><b>Art</b></a>
-      <a href="resume.html"><b>Resume</b></a>
-      <a href="javascript:void(0);" style="font-size:30px;color: white; padding: 18px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="aboutme.html"><img src="logo.png" alt="home" height="46px" margin="0px 12px 8px 12px"></a>
+        <a href="projects.html"><b>Programming</b></a>
+        <a href="artwork.html"><b>Tech Art</b></a>
+        <a href="resume.html"><b>Resume</b></a>
+        <a href="javascript:void(0);" style="font-size:30px;color: white; padding: 18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="rl">
+      <div class="sec">
+        <img src="logo2.jpg" style="width: 100%; height: 130px; padding: 8px 0px 0px 0px; margin: 0px;">
+      </div>
     </div>
 
-    <div class="body" style="margin-bottom: 0px;">
+    <div class="rr">
+      <div class="sec">
+        <h1>Sandy Demian</h1>
+        <p>(216)785-1700</p>
+        <p>sdemian@knights.ucf.edu</p>
+        <p><a href="SandyDemianResume.pdf">download pdf resume</a></p>
+      </div>
+    </div>
 
-        <div class="sec">
-          <h1>Sandy Demian</h1>
-          <p>(216)785-1700</p>
-          <p>sdemian@knights.ucf.edu</p>
-          <!--<p><a href="SandyDemianResume.pdf">download pdf resume</a></p>-->
-        </div>
-
-      <div class="rl">
+      <div class="rl"  style="background-color: black">
         <div class="sec">
           <h2>Education</h2>
           <ul>
-          <li><p>Florida Interactive Entertainment Academy<br/>Game Programming, M.S.<br/>December 2020<br/>GPA: 3.77/4.0</p></li>
+          <li><p>Florida Interactive Entertainment Academy<br/>Interactive Entertainment, M.S.<br/>Programming Track<br/>December 2020<br/>GPA: 3.79/4.0</p></li>
           <li><p>University of Central Florida<br/>Computer Science, B.S.<br/>December 2018<br/>GPA: 3.77/4.0</p></li>
           </ul>
         </div>
 
         <div class="sec">
-          <h2>Skills</h2>
+          <h2>Technical Skills</h2>
           <ul>
-            <li><p>Programming:<br/>C/C++, C#, Python, Java, Swift, JavaScript, HTML, CSS</p></li>
-            <li><p>Software:<br/>Visual Studio, Unity, Unreal, Perforce, Github, Xcode, Photoshop, Maya, Blender </p></li>
-            <li><p>Operating Systems:<br/>Windows, Mac, Linux</p></li>
+            <li><p>Programming:<br/>C/C++, C#, Python, Java, Swift, Json, JavaScript, HTML, CSS</p></li>
+            <li><p>Software:<br/>Visual Studio, Unity, Unreal, Xcode, Photoshop, Maya, Blender </p></li>
+            <li><p>Source Control:<br/>Perforce, GitHub</p></li>
+            <li><p>Other:<br/>MS Teams, Jira, Discord, Slack</p></li>
+          </ul>
+        </div>
+
+        <div class="sec">
+          <h2>Interests</h2>
+          <ul>
+          <li><p>Graphics</p></li>
+          <li><p>Procedural Generation</p></li>
+          <li><p>Environment Behavior</p></li>
+          <li><p>Visual Effects</p></li>
           </ul>
         </div>
 
         <div class="sec">
           <h2>Honors/Activities</h2>
           <ul>
-            <li><p>President's Honor Roll (4 semesters)</p></li>
-            <li><p>Dean's List (3 semesters)</p></li>
-            <li><p>Member of ACM-Women</p></li>
-            <li><p>Member of the Society of Women Engineers (SWE)</p></li>
+            <li><p>President's Honor Roll [4 semesters]</p></li>
+            <li><p>Dean's List [3 semesters]</p></li>
+            <li><p>ACM-Women Member</p></li>
+            <li><p>Society of Women Engineers Member</p></li>
           </ul>
         </div>
+
       </div>
 
-
-
       <div class="rr">
-        <div class="sec">
-          <h2>Projects</h2>
+        <div class="sec" style="margin-top: 0px;">
+          <h2 style="color: white;">Experience</h2>
 
-          <p style="margin-top: 10px;">Synaptograph (Senior Project) - Python</p> 
+          <p style="margin-top: 10px; color: white;"><a href="synaptograph.html">EEG 3D modeling Application - Python [Group Project]</a></p><p>Undergraduate Capstone Project<br/>[January - August 2018]</p>
           <ul>
-            <li><p>Creates 3D models from EEG brain scans obtained using the Emotiv EPOC headset</p></li>
-            <li><p>The 3D models are saved as .stl files and can be printed using a 3D printer</p></li>
+            <li><p>Records EEG data using the Emotiv Epoc+ headset and uses it to build 3D models for artistic purposes</p></li>
+            <li><p style="color: #b8abc6;"><b>Main contributions:</b></p><p>graphics to display the 3D models, building the second 3D model from EEG data, attaching the model base and saving it to an stl file</p></li>
           </ul>
 
-          <p style="margin-top: 18px;">iOS GPS Game - Swift</p>
+          <p style="margin-top: 12px; color: white;">Intro to Computer Science Teaching Assistant</p><p>University of Central Florida, Orlando FL<br/>[January - May 2018]</p>
           <ul>
-            <li><p>Location based game where players are given clues for locations inside a theme park and earn points for visiting these locations</p></li>
-          </ul>
-
-          <p style="margin-top: 18px;">Simple PL/0 Compiler - C</p>
-          <ul>
-            <li><p>Reads a program written in PL/0 and compiles and runs it on a virtual machine</p></li>
-            <li><p>This program included a parser, lexical analyzer, intermediate code generator, and a virtual machine</p></li>
-          </ul>   
-        </div>
-
-        <div class="sec">
-          <h2>Other Experience</h2>
-          <p style="margin-top: 12px;">Intro to Computer Science Teaching Assistant<br/>University of Central Florida, Orlando FL<br/>[January - May 2018]</p>
-          <ul>
-            <li><p>Grade weekly assignments</p></li>
             <li><p>Explain Computer Science concepts to students in an intro programming class</p></li>
-            <li><p>Help students with the weekly programming assignments in the labs</p></li>
+            <li><p>Help students in the labs and grade the weekly assignments</p></li>
           </ul>
+
         </div>
       </div>
     </div>
 
-    <div class="body" style="margin-top: 0px;">
-
-      <div class="rl2">
-
-        <div class="sec">
-          <h2 style="margin-bottom: 10px;">Related Coursework</h2>
-          <ul>
-              <li><p>Computer Science I and II</p></li>
-
-              <li><p>Discrete Structures</p></li>
-              <li><p>Systems Software</p></li>
-              <li><p>Operating Systems</p></li>
-              <li><p>Processes for Object Oriented Software Development</p></li>
-              <li><p>Computer Vision</p></li>
-              <li><p>Database Systems</p></li>
-              <li><p>AI for Game Programming</p></li>
-              <li><p>Programming Languages</p></li>
-              <li><p>Senior Design I and II</p></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="rr">
+    <!--<div class="body" style="margin-top: 0px;">
 
         <div class="sec">
           <h2>Volunteer</h2>
@@ -135,10 +118,8 @@
           </ul>
         </div>
 
-        
-      </div>
 
-    </div>
+    </div>-->
 
     <script src="responsive.js"></script>
     
