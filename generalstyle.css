@@ -226,6 +226,20 @@ footer {
   padding: 1% 1% 1% 2%;
 }
 
+.resumeL2 {
+  width:36%;
+  float: left;
+  margin: 0% 0% 0% 4%;
+  padding: 1% 2% 1% 1%;
+}
+
+.resumeR2 {
+  width: 54%;
+  float: left;
+  margin: 0% 4% 0% 0%;
+  padding: 1% 1% 1% 2%;
+}
+
 .rr a {
   color: #b8abc6;
 }
@@ -260,6 +274,19 @@ footer {
 }
 
 .pl {
+  width:28%;
+  float: left;
+  background-color: none;
+  margin: 1% 1% 1% 2%;
+}
+
+.profileR2 {
+  width: 60%;
+  float: left;
+  margin: 1% 4% 2% 4%;
+}
+
+.profileL2 {
   width:28%;
   float: left;
   background-color: none;
@@ -340,9 +367,11 @@ footer {
     text-align: left;
   }
 
-  body {
+.body {
     width: 100%;
-  }
+    margin: 0%;
+    padding: 0px 0px 10px 0px;
+}
 
   .code {
     font-size: 18px;
@@ -379,8 +408,8 @@ footer {
   .rl {
     width:88%;
     float: left;
-    background-color: black;
     padding: 1% 1% 1% 4%;
+    margin-bottom: 3%;
   }
 
   .rl2 {
@@ -403,8 +432,12 @@ footer {
     text-align: center;
   }
 
+  .pr h2 {
+    text-align: center;
+  }
+
   .pr p {
-    /*text-align: center;*/
+    text-align: center;
   }
 
   .pl {
@@ -431,5 +464,30 @@ footer {
     width: 460px;
     height: 260px;
   }
+
+  .profileR2 {
+    width: 90%;
+    float: left;
+    text-align: center;
+    margin: 1% 4% 2% 4%;
+  }
+
+  .profileL2 {
+    display: none;
+  }
+
+  .resumeL2 {
+  width:46%;
+  float: left;
+  margin: 0% 0% 0% 4%;
+  padding: 1% 2% 1% 1%;
+}
+
+.resumeR2 {
+  width: 44%;
+  float: left;
+  margin: 0% 4% 0% 0%;
+  padding: 1% 1% 1% 2%;
+}
 }
 
