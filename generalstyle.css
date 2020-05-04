@@ -123,12 +123,12 @@ footer {
 .sec li {
   font-family: "Times New Roman", Times, serif;
   font-size: 19px;
-  color: #b8abc6;
+  color: #e6e2eb;
   margin-bottom: 3px;
 }
 
 .sec a {
-  color: white;
+  color: #b8abc6;
 }
 
 .sec p a {
