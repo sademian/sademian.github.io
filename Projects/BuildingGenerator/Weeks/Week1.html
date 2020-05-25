@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>PBG - Week 1</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portofolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 1 - Project Set Up</h1>
+        <p>This week I have been focused on setting up the the project, this devlopment website and collecting modular meshes from asset packs</p>
+      </div>
+
+      <div class="sec">
+
+        <h2>Setting up the project and the spline tool</h2>
+        
+        <p>I satrted by making a new UE4 project and setting up the residential building generation class. I then spent some time figuring out how I will use splines to provide easier control for the tool. My goal is to have a spline for the base of the building and every all the floor footprints so the user can drag the spline points to adjust the base and the ootprints. In addition I will have to mainatain certain rules for the splines like not allowing the user to change the number of spline points on the base to keep it a square.</p>
+
+        <div class="secL">
+          <img src="../Images/week1.png">
+        </div>
+        
+        <p>The main issue I ran into was adding additional spline components at runtime; attemting to add spline components anywhere except in the constructor doesn't do anything. I will research this furthur but if I'm not able to make it happen then I have two other options to work around it.</p>
+        <p>One option would be to make a couple of spline components on construction and just clear their spline points and hide them until needed; this option is good but would limit the number of building sections I can make.</p>
+        <p>The second option is to use one spline component for everything by conecting the spline points from all the floors. The problem with this approach is that dealing with the spline points will get more complicated. Every floor will have an extra spline point to complete the loop, also when the user adds or removes a spline point in one floor the pointers  to the spline points for the following floors will need to be adjusted.</p>
+        
+      </div>
+
+      <div class="sec">
+
+        <h2>Collecting and analyzing the Modular pieces</h2>
+        
+        <p>My goal for this generator is that it can be adjusted to work with multiple modular pieces. In order to do that I collected a lot of modular pieces from different assets in the Unreal store and analyzed them. </p>
+        <p>The main issue I found is that assets have different pivot point locations and wouldn't be possible to know where the pivot point in relation to the object in code.</p>
+
+        <div class="secL">
+          <img src="../Images/week1.png">
+        </div>
+
+        <div class="secL">
+          <img src="../Images/week1.png">
+        </div>
+        
+      </div>
+
+      <div class="sec">
+
+        <h2>Generating the floorplan research</h2>
+        
+        <p>Towards the end of the week I did some research on algorithms for generating floorplans since that will be my focus for next week.</p>
+
+        
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+</html>

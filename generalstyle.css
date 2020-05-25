@@ -13,7 +13,7 @@
 
 body {
     color: white;
-    background-image: url('bg.png');
+    background-image: url('Images/bg.png');
     background-size: 40%;
     background-color: #330033; /*#2d1935*/
     height: 100%;
@@ -54,8 +54,6 @@ footer {
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     overflow: hidden;
-    /*background-color: black;*/
-    /*position: fixed;*/
 }
 
 .navigation a {
@@ -87,7 +85,7 @@ footer {
 .body {
     float: left;
     width: 70%;
-    height: 100%;
+    min-height: 100vh;
     margin: 0% 15% 0% 15%;
     padding: 20px 0px 60px 0px;
     background-color: #330033;
