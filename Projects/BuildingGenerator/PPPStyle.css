@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
+  font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   font-size: 22px;
   color: #a6a6a6;
@@ -37,7 +37,7 @@ h2 {
 }
 
 footer { 
-  background-color: black;
+  background-color: grey;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -87,7 +87,7 @@ footer {
     width: 70%;
     min-height: 100vh;
     margin: 0% 15% 0% 15%;
-    padding: 20px 60px 60px 40px;
+    padding: 20px 60px 100px 40px;
     background-color: #272626;
 }
 
@@ -154,7 +154,7 @@ footer {
   width: 200px;
   float: left;
   margin: 0%;
-  padding: 0% 2% 0% 0%;
+  padding: 0px 30px 6px 0px;
 }
 
 .secR {
@@ -201,6 +201,10 @@ footer {
     background-size: 100%;
   }
 
+  footer {
+    height: 0px;
+  }
+
   .navigation {
     padding: 0% 2% 0% 2%;
   }
@@ -208,7 +212,7 @@ footer {
   .body {
     width: 100%;
     margin: 0px 0px 36px 0px;
-    padding: 0px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
   }
 
   .resumeL {

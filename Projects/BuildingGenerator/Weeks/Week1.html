@@ -18,7 +18,7 @@
 
       <div class="sec">
         <h1>Week 1 - Project Set Up</h1>
-        <p>This week I have been focused on setting up the the project, this devlopment website and collecting modular meshes from asset packs</p>
+        <p>This week I have been focused on setting up the the project, the splines for the tool, and collecting modular meshes from asset packs. In addition I also set up this website and did some research on floorplan generation.</p>
       </div>
 
       <div class="sec">
@@ -27,8 +27,8 @@
         
         <p>I satrted by making a new UE4 project and setting up the residential building generation class. I then spent some time figuring out how I will use splines to provide easier control for the tool. My goal is to have a spline for the base of the building and every all the floor footprints so the user can drag the spline points to adjust the base and the ootprints. In addition I will have to mainatain certain rules for the splines like not allowing the user to change the number of spline points on the base to keep it a square.</p>
 
-        <div class="secL">
-          <img src="../Images/week1.png">
+        <div class="secL" style="width: 360px;">
+          <img src="../Images/splines.gif">
         </div>
         
         <p>The main issue I ran into was adding additional spline components at runtime; attemting to add spline components anywhere except in the constructor doesn't do anything. I will research this furthur but if I'm not able to make it happen then I have two other options to work around it.</p>
@@ -42,24 +42,35 @@
         <h2>Collecting and analyzing the Modular pieces</h2>
         
         <p>My goal for this generator is that it can be adjusted to work with multiple modular pieces. In order to do that I collected a lot of modular pieces from different assets in the Unreal store and analyzed them. </p>
-        <p>The main issue I found is that assets have different pivot point locations and wouldn't be possible to know where the pivot point in relation to the object in code.</p>
+        
 
         <div class="secL">
-          <img src="../Images/week1.png">
+          <img src="../Images/pivot1.png">
         </div>
 
         <div class="secL">
-          <img src="../Images/week1.png">
+          <img src="../Images/pivot2.png">
         </div>
+
+        <div class="secL">
+          <img src="../Images/pivot3.png">
+        </div>
+
+        <p>The main issue I found is that assets have different pivot point locations and it wouldn't be possible to know where the pivot point in relation to the object in code. To work around this I can add a setting for the user to adjust based on where the pivot points are on their meshes; also that setting can either be for all the meshes or ajusted for every mesh the user provides. this option would definetly complicate the generator and would still only work for common pivot point locations and not any arbitrary location. The other choice would be to just use the more common pivot point (bottom-left corner) and the user would have to adjust the pivot point on the meshes in a modeling software and import them back to use the generator.</p>
+
+        <div class="secL" style="width: 360px;">
+          <img src="../Images/windows.png">
+        </div>
+
+        <p>Another way modular pieces differ is the way windows and doors are made, sometimes windows and doors where attached to a wall section and other times they were not. I most likely will work with the windows with wall sections because they allow for transparent windows, seem slightly more common, and it's easy to combine seperate windows with a wall section than it is to seperate them in a mesh. The only issue with this approach is that doors and windows will have to have the same style and the same wall mesh.</p>
         
       </div>
 
       <div class="sec">
 
-        <h2>Generating the floorplan research</h2>
+        <h2>Research on generating the floorplan</h2>
         
-        <p>Towards the end of the week I did some research on algorithms for generating floorplans since that will be my focus for next week.</p>
-
+        <p>Towards the end of the week I did some research on algorithms for generating floorplans since that will be my focus for next week. I will probably use Subtractive Footprint Generation because it works well for consequent floors. The Subtractive Footprint Generation is described <a href="https://martindevans.me/game-development/2016/05/07/Procedural-Generation-For-Dummies-Footprints/">here.</a></p>
         
       </div>
 
@@ -68,4 +79,5 @@
   <script src="responsive.js"></script>
 
 </body>
+<footer></footer>
 </html>
