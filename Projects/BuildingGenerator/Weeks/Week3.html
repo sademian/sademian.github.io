@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>PBG - Week 3</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portfolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 3 - Floorplan Manipulation</h1>
+        <p>This week I have been focused on the floorplan manipulation and cleaning up the code to start generating the floorplans, I wanted to have the floorplan generation done this week but the tasks that needed to be done first ended up taking the entire time.</p>
+      </div>
+
+      <div class="sec">
+
+        <h2>Code Refactoring</h2>
+        
+        <p>Before this week I had been storing just a single spline and a couple of variables because there were some questions still being answered. In order to move forward I had to spend a couple of hours refactoring the code so I can store the data in a better way and adjust the methods to work for any level spline. I added a levelData struct to store the variables that would be different for every level and stored a levels array in the building class. I also moved the code in the construction method into smaller methods.</p>
+        
+      </div>
+
+      <div class="sec">
+
+        <h2>Dynamic Corners</h2>
+        
+        <p>I added room for a corner mesh since wall segments are usually modeled with corner meshes to close wall gap. Also added some math to adjust the floorplan when the corner length changed.</p>
+        
+        <VIDEO width="98%" style="padding: 1% 0% 1% 0%;" controls><source src="../Videos/dynamicCorner.mp4" type="video/mp4"></VIDEO>
+
+      </div>
+
+      <div class="sec">
+
+        <h2>Segment Size Snapping</h2>
+        
+        <p>I added snapping for manipulating the spline points based on the current segment length.</p>
+        
+        <VIDEO width="98%" style="padding: 1% 0% 1% 0%;" controls><source src="../Videos/snapping.mp4" type="video/mp4"></VIDEO>
+
+      </div>
+
+      <div class="sec">
+
+        <h2>Dynamic Segment Length</h2>
+        
+        <p>I added floorplan adjustments for when the segment length changes, I used scaling with some additional math to keep the corner length unchanged.</a></p>
+        <VIDEO width="98%" style="padding: 1% 0% 1% 0%;" controls><source src="../Videos/dynamicSegments.mp4" type="video/mp4"></VIDEO>
+        
+      </div>
+
+      <div class="sec">
+
+        <h2>Next Week</h2>
+        
+        <p>I will work on generating footprints using subtractive shape generation and adding multiple floors.</a></p>
+        
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+<footer></footer>
+</html>
