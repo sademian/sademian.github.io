@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>PBG - Week 5</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portfolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 5 - Procedural Floorplan Generation</h1>
+        <p>This week I worked on the automatically generating floorplans, cleaning up the code, and preparing for my midterm progress presentation. I also made the decision to remove corners.</p>
+      </div>
+
+      <div class="sec">
+
+        <h2>Removing Corners and Corner Meshes</h2>
+        
+        <p>I wanted to add corners and corner meshes because some asset pack meshes come with corner pieces. However, they cause a lot of issues for floorplans since walls will not add up correctly if one side has an extrusion (first picture). I initially thought I could deal with it by making sure to add an extrusion to the other side to balance it out, but when I thought about it more and discussed it with my advisor I realized it's better to not have corners altogether. To fix the gaps in the wall caused by extended details I will eventually add an option to add small corner meshes at the edge without allowing room for a wall piece (second and third pictures).</p>
+
+        <img src="../Images/CornerIssue.png" style="height: 304px; width: 372px;">
+        <img src="../Images/CornerSolution1.png" style="height: 304px; width: 304px; margin-left: 10px;">
+        <img src="../Images/CornerSolution2.png" style="height: 304px; width: 304px; margin-left: 10px;">
+
+      </div>
+
+      <div class="sec">
+
+        <h2>Generating Floorplans for a Single Level</h2>
+        
+        <p>Next, I worked on generating floorplans for the first level. I used <a href="https://martindevans.me/game-development/2016/05/07/Procedural-Generation-For-Dummies-Footprints/">subtractive shape generation</a>, specifically inverting corners, to achieve this. My algorithm generates a square with the provided width and depth and then randomly attempts to invert a corner if there is enough space. When inverting a corner, the width and depth of the piece that is removed are also randomly chosen within reasonable bounds.</p> 
+
+         <VIDEO width="98%" style="padding: 1% 0% 1% 0%;" controls><source src="../Videos/Floorplans.mp4" type="video/mp4"></VIDEO>
+
+      </div>
+
+      <div class="sec">
+
+        <h2>Generating Floorplans for Multiple Levels</h2>
+        
+        <p>Then I modified the algorithm to work for multiple levels. For every level after the first level, the points from the previous level are used an input. The algorithm then attempts to invert each point if there is enough space. The higher the level, the more likely it is that the algorithm will attempt to invert a point but it will be more likely that it will fail because there isn't enough room. I'm mostly happy with the result but I will continue to tweak the algorithm more if I think of ideas to improve it.</p>
+        
+        <VIDEO width="98%" style="padding: 1% 0% 1% 0%;" controls><source src="../Videos/MultiLevelFloorplan.mp4" type="video/mp4"></VIDEO>
+
+      </div>
+
+      <div class="sec">
+
+        <h2>Midterm Presentation</h2>
+        
+        <p>I am working on my midterm progress presentation for the rest of the week and will post the PowerPoint here when it's complete.</a></p>
+        
+      </div>
+
+      <div class="sec">
+
+        <h2>Next Week</h2>
+        
+        <p>I will be working on adding doors and windows next week, and possibly adding balconies if I have time.</a></p>
+        
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+<footer></footer>
+</html>
