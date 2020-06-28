@@ -52,11 +52,16 @@ footer {
 
 .navigation {
     list-style-type: none;
-    margin: 4px 12px 2px 12px;
+    margin: 6px 12px 8px 12px;
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     overflow: hidden;
     padding-left: 15%;
+    float: center;
+    align-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .navigation a {
@@ -69,7 +74,7 @@ footer {
 .navigation b {
     color: white;
     display: block;
-    text-align: left;
+    text-align: center;
     font-weight: normal;
     padding: 23px 6px 0px 18px;
     text-decoration: none;
@@ -88,18 +93,18 @@ footer {
 .body {
     float: left;
     width: 70%;
-    min-height: 100vh-40px;
+    min-height: 100vh;
     margin: 0% 15% 0% 15%;
-    padding: 20px 0px 100px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: #330033;
 }
 
 .header {
-    float: left;
-    height: 70px;
+    text-align: center;
     width: 100%;
     margin: 0%;
     background-color: black;
+    position: fixed;
 }
 
 .sec {
@@ -180,7 +185,7 @@ footer {
 
 .gallery {
   width: 100%;
-  align-content: center;
+  float: left;
 }
 
 .gallery > h2 {
@@ -188,7 +193,6 @@ footer {
 }
 
 .gallery > div {
-  position: relative;
   height: 340px;
   float: left;
   padding: 1% 2% 2% 0%;
