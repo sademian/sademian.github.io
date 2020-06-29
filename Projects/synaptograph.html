@@ -8,15 +8,18 @@
 <body>
 
   <div class="header" id="head">
+    <div class="logo">
+    <img src="../Images/logo.png">
+  </div>
     <div class="navigation" id="nav">
-        <a href="../index.html"><img src="../Images/logo.png" alt="home" height="46px" margin="0px 12px 8px 12px"></a>
+        <a href="../index.html"><b>Home</b></a>
         <a href="../projects.html"><b>Programming</b></a>
         <a href="../resume.html"><b>Resume</b></a>
-        <a href="javascript:void(0);" style="font-size:30px;color: white; padding: 18px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    <div style="border-bottom-style: solid; color: #a28fb7;"></div>
   </div>
 
-    <div class="body">
+    <div class="body" style="text-align: center;">
 
       <div class="sec">
         <h1>Synaptograph</h1>
@@ -27,23 +30,22 @@
       </div>
 
       <div class="sec">
-        <p>A demo of the application</p>
+        <br><h2>A demo of the application</h2>
         <p><br><iframe width="800" height="500" src="https://www.youtube.com/embed/NlIEoA78f6o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
       </div>
 
       <div class="sec">
         <br><h2>Contributions</h2>
-        <br><ul>
-          <li><p>Implemented the graphics to display the 3D models using OpenGL</p></li>
-          <li><p>Created an algorithm to build 3D models from EEG data and attach the model base made in Blender to the models made in code</p></li>
-          <li><p>Implemented the ability to save the models as .stl files</p></li>
-          <li><p>UI art and Design</p></li>
-        </ul>
+        <br>
+          <p>Implemented the graphics to display the 3D models using OpenGL</p>
+          <p>Created an algorithm to build 3D models from EEG data and attach the model base made in Blender to the models made in code</p>
+          <p>Implemented the ability to save the models as .stl files</p>
+          <p>UI art and Design</p>
       </div>
 
       <div class="sec">
-        <p style="padding-bottom: 10px;">Some of the 3D models created</p>
-        <img src="synapt/model1.png" style="height: 300px; margin: 5px;" />
+        <h2>Some of the 3D models created</h2>
+        <br><img src="synapt/model1.png" style="height: 300px; margin: 5px;" />
         <img src="synapt/model5.png" style="height: 300px; margin: 5px;" />
         <img src="synapt/model3.png" style="height: 300px; margin: 5px;" />
         <img src="synapt/model4.png" style="height: 300px; margin: 5px;" />
@@ -57,6 +59,9 @@
 
 </body>
 
-<footer><br><h2>Copyright © 2020 Sandy Demian</h2></footer>
+<footer>
+  <div style="border-bottom-style: solid; color: #a28fb7;"></div>
+  <p>Copyright © 2020 Sandy Demian</p>
+</footer>
 
 </html>

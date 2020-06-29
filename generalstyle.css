@@ -39,6 +39,7 @@ h2 {
 footer { 
   background-color: black;
   position: fixed;
+  float: bottom;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -107,7 +108,7 @@ footer p
     width: 70%;
     min-height: 100vh;
     margin: 0% 15% 0% 15%;
-    padding: 220px 0px 100px 0px;
+    padding: 40px 0px 100px 0px;
     background-color: #330033;
 }
 
@@ -116,7 +117,6 @@ footer p
     width: 100%;
     margin: 0%;
     background-color: black;
-    position: fixed;
 }
 
 .sec {
