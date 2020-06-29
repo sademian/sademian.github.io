@@ -41,11 +41,15 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 60px;
   width: 100%;
   color: white;
   text-align: right;
-  padding-right: 40px;
+}
+
+footer p 
+{
+  color: #e6e2eb;
+  padding: 15px 40px 15px 0px; 
 }
 
 /*----------------- Navigation -----------------*/
@@ -54,14 +58,11 @@ footer {
     list-style-type: none;
     margin: 6px 12px 8px 12px;
     font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
+    font-size: 24px;
     overflow: hidden;
-    padding-left: 15%;
     float: center;
-    align-content: center;
-    text-align: center;
-    align-content: center;
-    align-items: center;
+    display: table; 
+    margin: 0 auto;
 }
 
 .navigation a {
@@ -76,7 +77,7 @@ footer {
     display: block;
     text-align: center;
     font-weight: normal;
-    padding: 23px 6px 0px 18px;
+    padding: 20px 6px 30px 18px;
     text-decoration: none;
 }
 
@@ -84,8 +85,19 @@ footer {
     color: #a28fb7;
 }
 
-.navigation .icon {
+.header .icon {
   display: none;
+}
+
+.navigation li
+{
+  display:table-cell;
+}
+
+.logo img
+{
+  padding: 20px 12px 4px 12px;
+  width: 360px;
 }
 
 /*----------------- Body and Sections -----------------*/
@@ -95,7 +107,7 @@ footer {
     width: 70%;
     min-height: 100vh;
     margin: 0% 15% 0% 15%;
-    padding: 100px 0px 100px 0px;
+    padding: 220px 0px 100px 0px;
     background-color: #330033;
 }
 
@@ -112,7 +124,7 @@ footer {
     width: 90%;
     background-color: none; /*grey;*/
     margin: 1% 5% 1% 5%;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 .sec p {
@@ -185,7 +197,11 @@ footer {
 
 .gallery {
   width: 100%;
-  float: left;
+      float: center;
+      text-align: center;
+      list-style: none;
+    display: table; 
+    margin: 0 auto;
 }
 
 .gallery > h2 {
@@ -194,12 +210,11 @@ footer {
 
 .gallery > div {
   height: 340px;
-  float: left;
   padding: 1% 2% 2% 0%;
+  display: inline-block;
 }
 
 .gallery > div > img {
-  display: block;
   height: 320px;
   /*transition: .1s transform;
   transform: translateZ(0); /* hack */
@@ -341,23 +356,33 @@ footer {
 /* Responsive layout - when the screen is less than 800px wide */
 @media screen and (max-width: 800px) {
 
+footer p {
+  padding: 15px 20px 15px 0px; 
+}
+
+.logo img
+{
+  padding: 8px 5% 8px 5%;
+  width: 90%;
+}
+
   .navigation {
     font-family: "Times New Roman", Times, serif;
     background-color: black;
-        padding-left: 10px;
+    padding-left: 10px;
   }
 
   .navigation a b {
-    padding: 5px 16px;
-    text-align: left;
-    margin: 4px 4px 2px 4px;
+    padding: 8px 6px 22px 6px;
+    text-align: center;
+    margin: 1px 4px 1px 4px;
   }
 
-  .navigation a:not(:first-child){
-    display: none;
+  .navigation a{
+    
   }
     
-  .navigation a.icon {
+  .header a.icon {
     float: right;
     display: block;
   }
@@ -396,7 +421,7 @@ footer {
 .body {
     width: 100%;
     margin: 0%;
-    padding: 110px 0px 80px 0px;
+    padding: 200px 0px 80px 0px;
 }
 
   .code {

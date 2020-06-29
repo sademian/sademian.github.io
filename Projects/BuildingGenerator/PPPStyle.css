@@ -41,35 +41,34 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 40px;
   width: 100%;
-  color: white;
+  color: #272626;
+  text-align: right;
+  padding: 15px 40px 15px 0px;
 }
 
 /*----------------- Navigation -----------------*/
 
 .navigation {
     list-style-type: none;
-    padding: 0% 20% 0% 17%;
+    padding: 20px 20% 20px 17%;
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
-    overflow: hidden;
+    display: table; 
+    margin: 0 auto;
 }
 
-.navigation a {
-    float: left;
-    display: block;
+.navigation a 
+{
     text-decoration: none;
-    text-align: center;
 }
 
 .navigation b {
     color: #272626;
-    display: block;
-    text-align: center;
     font-weight: bold;
     padding: 23px 6px 0px 18px;
     text-decoration: none;
+    display: inline;
 }
 
 .navigation b:hover {
@@ -80,6 +79,16 @@ footer {
   display: none;
 }
 
+.navigation ul
+{
+	list-style: none;
+}
+
+.navigation li
+{
+	display:table-cell;
+}
+
 /*----------------- Body and Sections -----------------*/
 
 .body {
@@ -87,7 +96,7 @@ footer {
     width: 70%;
     min-height: 100vh;
     margin: 0% 15% 0% 15%;
-    padding: 20px 60px 100px 40px;
+    padding: 100px 60px 100px 40px;
     background-color: #272626;
 }
 
@@ -96,7 +105,10 @@ footer {
     height: 70px;
     width: 100%;
     margin: 0%;
-    background-color: grey;
+    top: 0;
+    left: 0;
+	background-color: grey;
+	position: fixed;
 }
 
 .sec {

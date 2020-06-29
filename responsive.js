@@ -12,6 +12,7 @@ function myFunction()
   {
     x.className = "navigation";
   }
+  
   var y = document.getElementById("comment");
   if (y.className === "code")
   {
