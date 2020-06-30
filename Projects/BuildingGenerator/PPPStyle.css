@@ -54,8 +54,6 @@ footer {
     padding: 20px 20% 20px 17%;
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
-    display: table; 
-    margin: 0 auto;
 }
 
 .navigation a 
@@ -66,9 +64,8 @@ footer {
 .navigation b {
     color: #272626;
     font-weight: bold;
-    padding: 23px 6px 0px 18px;
-    text-decoration: none;
-    display: inline;
+    padding: 0px 6px 20px 20px;
+    float: left;
 }
 
 .navigation b:hover {
@@ -86,7 +83,7 @@ footer {
 
 .navigation li
 {
-	display:table-cell;
+
 }
 
 /*----------------- Body and Sections -----------------*/
@@ -102,7 +99,6 @@ footer {
 
 .header {
     float: left;
-    height: 70px;
     width: 100%;
     margin: 0%;
     top: 0;

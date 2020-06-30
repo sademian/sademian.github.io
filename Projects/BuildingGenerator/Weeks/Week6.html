@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>PBG - Week 6</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portfolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 6 - Generating Windows and Doors</h1>
+        <p>This week I worked on adding windows and doors.</p>
+      </div>
+
+      <div class="sec">
+        <h2>Adding Window and Door Mesh classes</h2>
+        <p>I derived two classes from my Modular Piece class for the doors and winows. The reason I decided to derive classes instead of making a type enum is because I wanted to use unreal's class parameter filtering</p>
+      </div>
+
+      <div class="sec">
+        <h2>Procedural Windows/Door Generation</h2>
+        <p>Next, I worked on generating the windows and doors layout. Currently, the algorithm I wrote attempts to place a window at a 1/3 chance most of the time. If two windows are placed next to each other then a door is chosen next to make sure there are no possibility of generating 3 windows next to each other, on the other hand if we have two consecutive walls then the chance of having a window next increases to 1/2.</p> 
+         <VIDEO width="98%" style="padding: 1% 0% 1% 0%; border:2px solid grey; controls><source" src="../Videos/windows.mp4" type="video/mp4"></VIDEO>
+      </div>
+
+      <div class="sec">
+        <h2>Next Week</h2>
+        <p>Next week, I will be working on adjusting the windows/doors placements and adding simple flat roof.</a></p>
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+<footer><p>Copyright © 2020 Sandy Demian</p></footer>
+</html>
