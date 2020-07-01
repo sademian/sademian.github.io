@@ -28,9 +28,16 @@
       </div>
 
       <div class="sec">
-        <h2>Procedural Windows/Door Generation</h2>
-        <p>Next, I worked on generating the windows and doors layout. Currently, the algorithm I wrote attempts to place a window at a 1/3 chance most of the time. If two windows are placed next to each other then a door is chosen next to make sure there are no possibility of generating 3 windows next to each other, on the other hand if we have two consecutive walls then the chance of having a window next increases to 1/2.</p> 
-         <VIDEO width="98%" style="padding: 1% 0% 1% 0%; border:2px solid grey;" controls><source src="../Videos/windows.mp4" type="video/mp4"></VIDEO>
+        <h2>Procedural Windows/Door Generation: First Algorithm</h2>
+        <p>Next, I worked on generating the windows and doors layout. The first algorithm I tried attempts to place a window at a 1/3 chance most of the time. If two windows are placed next to each other then a wall is chosen next to make sure there are no possibility of generating 3 windows next to each other, on the other hand if we have two consecutive walls then the chance of having a window next increases to 1/2. I then updated it to have the starting chance as an exposed parameter so I can have more control. When two windows are chosen consecutively, the following choice is a  wall. However, when two walls are chosen consecutively, a window is not chosen automatically but the chance of a window increases. In the following video the window chance is 50%.</p> 
+         <VIDEO width="98%" style="padding: 1% 0% 1% 0%; border:2px solid grey;" controls><source src="../Videos/windows1.mp4" type="video/mp4"></VIDEO>
+      </div>
+
+      <div class="sec">
+        <h2>Procedural Windows/Door Generation: Second Algorithm</h2>
+        <p>Another algoritm I tried used the window chance to determine how many windows a wall should have. It then used a 50% chance to decide if a wall or window should be placed at the next slot assuming the number of walls/windows left to be placed was not exceeded. When there are two windows next to each other then it attempts to choose a wall if possible and similarly for the case where there are two walls next to each other. This doesn't guarantee that there won't be three windows next to each other but it guarantees that the ratio of walls to windows is equal on all the walls which is not true for the first algorithm.</p> 
+         <VIDEO width="98%" style="padding: 1% 0% 1% 0%; border:2px solid grey;" controls><source src="../Videos/windows2.mp4" type="video/mp4"></VIDEO>
+        <p>It's hard to decide which algorithm is better. I think the second one becuase it doesn't end up with long windowless walls sometimes and is more stable. However, I might try to sometimes adjust the number of windows slightly to see if it would help the second algoritm be less predictable and repetitive</p>
       </div>
 
       <div class="sec">
