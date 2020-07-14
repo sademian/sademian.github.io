@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>PBG - Week 8</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portfolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 8 - Roof Generation</h1>
+        <p>This week I worked on procedurally generating hipped roofs</p>
+      </div>
+
+      <div class="sec">
+        <h2>Generating Roof Meshes</h2>
+        <p>I initially thogutht I could arrange roof mesh segments to generate roofs, however, after looking at the meshes that came from asset packs I decided it would be better to programmatically generate a custom mesh. I used Unreal's Procedural Mesh Component.</p>
+        <p>I spent a couple of hours learning how to use the procedural mesh component, and adding a simple roof. I still have to break up the mesh for the large top roof so that it's more accurate(I started working on that this week but it's not complete yet). I also added a roof type variable to switch between a flat and hipped roof.</p>
+        <p><br><VIDEO width="98%" style="border:2px solid grey;" controls><source src="../Videos/Roof.mp4" type="video/mp4"></VIDEO></p>
+      </div>
+
+      <div class="sec">
+        <h2><br>Roof UVing</h2>
+          <p><br>I spent the rest of my hours understanding how to UV the roof correctly. It was a subject that I didn't know a lot about and I still have some work left but I decided to focus on getting the top piece broken into smaller shapes first then fix the rest of the UV sections.</p>
+          <p><br><img src="../Images/Roof.png" style="width: 700px;"></p>
+      </div>
+
+      <div class="sec">
+        <h2>Next Week</h2>
+        <p>Next week, I will be working on making the roof more accurate and starting on adding decorations like trims and corner details.</a></p>
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+<footer><p>Copyright © 2020 Sandy Demian</p></footer>
+</html>
