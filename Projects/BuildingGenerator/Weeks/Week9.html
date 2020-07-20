@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>PBG - Week 9</title>
+  <link rel="stylesheet" type="text/css" href="../PPPStyle.css">
+</head>
+<body>
+
+  <div class="header" id="head">
+    <div class="navigation" id="nav">
+        <a href="../BuildingGenerator.html"><b>Home</b></a>
+        <a href="../../../index.html"><b>Portfolio</b></a>
+    </div>
+  </div>
+
+    <div class="body">
+
+      <div class="sec">
+        <h1>Week 9 - More Roof Generation</h1>
+        <p>This week I worked on improving the roof and adding trims and corner meshes</p>
+      </div>
+
+      <div class="sec">
+        <h2>Roof Generation: More Methods</h2>
+        <p>I spent a lot of hours this week improving the roof. I tried two different ways of breaking up the roof into multiple sections, however both were not very successful.</p>
+        <p>The video below is of one of the methods were I tried to break the roof into sections and decide the roof shape based on the number of vertices on the outside, however I could not connect the sections nicely.</p>
+        <p><VIDEO width="78%" style="border:2px solid grey;" controls><source src="../Videos/roofMethod2.mp4" type="video/mp4"></VIDEO></p>
+        <p>The second attempt was to break the roof into smaller squares but that did not look right and was failing in some cases.</p>
+        <p><VIDEO width="78%" style="border:2px solid grey;" controls><source src="../Videos/roofMethod3.mp4" type="video/mp4"></VIDEO></p>
+      </div>
+
+      <div class="sec">
+        <h2>Roof Generation: Method 1 Improved</h2>
+          <p>I finally decided to go back to the original roof generation I had and just fix the UV and add trims to hide the connections. Although this roof is not very accurate, I'm happy with how it looks and I needed to move on to other work.</p>
+          <p>The left picture is before the improvements and the right one is after</p>
+          <p><img src="../Images/Roof.png" style="width: 45%;"><img src="../Images/Roof2.png" style="width: 45%;"></p>
+          <p><VIDEO width="90%" style="border:2px solid grey;" controls><source src="../Videos/roofFinal.mp4" type="video/mp4"></VIDEO></p>
+      </div>
+
+      <div class="sec">
+        <h2>Corner Meshes</h2>
+          <p>I them moved on to adding corner meshes to cover wall gaps.</p>
+          <p><img src="../Images/Corner.png" style="width: 65%;"></p>
+      </div>
+
+      <div class="sec">
+        <h2>Next Week</h2>
+        <p>Next week, I will be working on adding a trim under the roof, polishing, and preparing for the final presentation.</a></p>
+      </div>
+
+    </div>
+
+  <script src="responsive.js"></script>
+
+</body>
+<footer><p>Copyright © 2020 Sandy Demian</p></footer>
+</html>
