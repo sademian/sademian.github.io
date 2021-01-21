@@ -106,7 +106,7 @@ footer p
 .body {
     float: left;
     width: 70%;
-    min-height: 100vh;
+    min-height: 86vh;
     margin: 0% 15% 0% 15%;
     padding: 40px 0px 100px 0px;
     background-color: #330033;
@@ -284,7 +284,7 @@ footer p
 /*----------------- About Me -----------------*/
 
 .pr {
-  width: 60%;
+  width: 90%;
   float: left;
   margin: 1% 4% 2% 4%;
 }
@@ -299,16 +299,16 @@ footer p
 }
 
 .pl {
-  width:28%;
+  width:30%;
   float: left;
   background-color: none;
-  margin: 1% 1% 1% 2%;
+  margin: 0px 50px 20px 0px;
 }
 
 .profileR2 {
   width: 60%;
   float: left;
-  margin: 1% 2% 2% 2%;
+  margin: 2% 1% 2% 2%;
 }
 
 .profileL2 {
