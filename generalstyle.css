@@ -15,7 +15,7 @@ body {
     color: white;
     background-image: url('Images/bg.png');
     background-size: 40%;
-    background-color: #330033; /*#2d1935*/
+    background-color: #1e1520; /*#330033; /*#2d1935*/
     height: 100%;
     width: 100%;
 }
@@ -109,7 +109,7 @@ footer p
     min-height: 86vh;
     margin: 0% 15% 0% 15%;
     padding: 40px 0px 100px 0px;
-    background-color: #330033;
+    background-color: #181019;
 }
 
 .header {
@@ -122,14 +122,14 @@ footer p
 .sec {
     float: left;
     width: 90%;
-    background-color: none; /*grey;*/
+    background-color: none; 
     margin: 1% 5% 1% 5%;
     padding-bottom: 10px;
 }
 
 .sec p {
   font-size: 19px;
-  color: #e6e2eb;
+  color: white; /*#d8d4d8;*/
   margin-bottom: 2px;
   line-height: 1.6;
 }
@@ -290,7 +290,7 @@ footer p
 }
 
 .pr a {
-  color: #b8abc6;
+  color: whit; /*#b8abc6;*/
 }
 
 .pr p {
