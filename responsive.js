@@ -1,25 +1,24 @@
 // Sandy Demian
 // responsive.js
 
-function myFunction() 
+
+mobileImg = document.getElementById('mobileImg');
+webImg = document.getElementById('webImg');
+
+resumeL = document.getElementById('resumeL');
+
+window.addEventListener("load", function () 
 {
-  var x = document.getElementById("nav");
-  if (x.className === "navigation") 
-  {
-    x.className += " responsive";
-  } 
-  else 
-  {
-    x.className = "navigation";
+  if (window.innerWidth < 960) 
+  { 
+    if (mobileImg) mobileImg.style.display = 'block';
+    if (webImg) webImg.style.display = 'none';
+
+    if (resumeL) resumeL.width = '40px';
   }
-  
-  var y = document.getElementById("comment");
-  if (y.className === "code")
+  else
   {
-    y.className += " responsive";
-  } 
-  else 
-  {
-    y.className = "code";
+    if (mobileImg) mobileImg.style.display = 'none';
+    if (webImg) webImg.style.display = 'block';
   }
-}
+});
