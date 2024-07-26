@@ -25,12 +25,30 @@ body
 table 
 {
   width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+table tr 
+{
+  width: 100%;
 }
 
 table td 
 {
   padding: 20px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.resume td
+{
   vertical-align: top;
+  text-align: left;
+}
+
+ul li {
+  margin: 10px 0px;
 }
 
 h1 
@@ -310,7 +328,6 @@ p
 
 /* mondrian button style */
 #b {
-  font-family: "Times New Roman", Times, serif;
   background-color: #b8abc6;
   padding: 5px;
   margin: 8px 0px 0px 0px;
@@ -351,10 +368,16 @@ footer p {
     display: block;
   }
 
-.sec {
+.sec 
+{
     width: 90%;
     margin: 1% 5% 1% 5%;
     padding-bottom: 0px;
+}
+
+.profilePic
+{
+  width: 50%;
 }
 
 table td {
